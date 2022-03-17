@@ -42,8 +42,7 @@ allprojects {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation project(path: ':landmarksid-androidlo')
+    implementation fileTree(dir: 'libs', include: ['*.jar','*.aar'])
     implementation 'com.facebook.react:react-native:+'
 }
   
