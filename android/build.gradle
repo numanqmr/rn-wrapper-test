@@ -34,15 +34,17 @@ allprojects {
     repositories {
         mavenCentral()
         google()
-        jcenter()
         maven {
-            url "https://maven.google.com"
+            url "https://jitpack.io"
+            credentials { username authToken }
         }
+        jcenter()
     }
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar','*.aar'])
+    implementation "com.gitlab.landmarksid:sdk-android-lo:1.6.5"
     implementation 'com.facebook.react:react-native:+'
+    implementation 'org.jetbrains:annotations:15.0'
 }
   
